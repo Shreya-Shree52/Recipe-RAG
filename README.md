@@ -53,35 +53,15 @@ RecipeRAG/
 
 Installation
 
-git clone https://github.com/riteshnitrkl/RecipeRAG.git
 cd RecipeRAG
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+Create a .env file: GROQ_API_KEY=your_groq_api_key
+Build Vector Database - python ingest.py
+Run Application - streamlit run streamlit_app.py
 
-Environment Variables
 
-Create a .env file:
-
-GROQ_API_KEY=your_groq_api_key
-
-Build Vector Database
-
-python ingest.py
-
-Run Application
-
-streamlit run streamlit_app.py
-
-Example Questions
-
-* Tell me about paneer
-* Show me chicken recipes
-* How to make biryani?
-* What should I eat after a workout?
-* Nutrition information for almonds
-* Suggest a healthy dinner
 
 Author
-
-Ritesh Chaurasiya
+Shreya Shree
