@@ -585,14 +585,10 @@ def get_chain():
     )
 
     llm = ChatGroq(
-        model="llama-3.1-8b-instant",
+        model="openai/gpt-oss-20b",
         temperature=0.2,
-        max_tokens=900,          # prevents runaway repetition loops
+        max_tokens=900,         
         groq_api_key=os.environ.get("GROQ_API_KEY"),
-        model_kwargs={
-            "frequency_penalty": 0.3,   # discourages "However, ..." style repetition
-            "presence_penalty":  0.1,
-        },
     )
 
     # ── Router ──────────────────────────────────────────────────────────────
